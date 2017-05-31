@@ -8,7 +8,7 @@ class ntp::params {
   $service_enable     = true
   $service_hasrestart = true
   $service_hasstatus  = true
-  
+
   $service_name = $facts['os']['family'] ? {
     'Debian' => 'ntp',
     default  => 'ntpd',
